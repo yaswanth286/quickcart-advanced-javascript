@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickCart Product Tools</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>QuickCart Product Tools</h1>
+
+    <section class="panel">
+      <h2>Product search</h2>
+      <input id="searchInput" type="search" placeholder="Search products">
+      <p id="searchStatus">Start typing to search.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Product list</h2>
+      <p id="eventStatus">Click a remove button to see event bubbling.</p>
+      <ul id="productList">
+        <li data-id="1"><span>Laptop</span><button class="remove-button">Remove</button></li>
+        <li data-id="2"><span>Mouse</span><button class="remove-button">Remove</button></li>
+        <li data-id="3"><span>Keyboard</span><button class="remove-button">Remove</button></li>
+      </ul>
+      <button id="addProductButton" type="button">Add product</button>
+    </section>
+
+    <section class="panel">
+      <h2>Discount calculator</h2>
+      <button id="discountButton" type="button">Calculate discount</button>
+      <p id="discountResult"></p>
+    </section>
+
+    <section class="panel scroll-panel">
+      <h2>Scroll event</h2>
+      <p id="scrollStatus">Scroll this page to trigger the throttled event.</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
